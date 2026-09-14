@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <title>TourGo - Smart Trip Reservation</title>
+
+
+  <!-- Bootstrap CSS -->
+
+  <link
+    href="vendor/bootstrap/css/bootstrap.min.css"
+    rel="stylesheet">
+
+
+  <!-- Additional CSS -->
+
+  <link
+    rel="stylesheet"
+    href="assets/css/fontawesome.css">
+
+  <link
+    rel="stylesheet"
+    href="assets/css/templatemo-woox-travel.css">
+
+  <link
+    rel="stylesheet"
+    href="assets/css/owl.css">
+
+  <link
+    rel="stylesheet"
+    href="assets/css/animate.css">
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+
+</head>
+
+
+<body>
+
+
+  <!-- PRELOADER -->
+
+  <div id="js-preloader" class="js-preloader">
+
+    <div class="preloader-inner">
+
+      <span class="dot"></span>
+
+      <div class="dots">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- HEADER -->
+
+  <header class="header-area header-sticky">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-12">
+
+          <nav class="main-nav">
+
+
+            <!-- LOGO -->
+
+            <a href="index.html" class="logo">
+
+              <img
+                src="assets/images/Gemini_Generated_Image_qho5wzqho5wzqho5 (1).png"
+                alt="TourGo">
+
+            </a>
+
+
+            <!-- MENU -->
+
+            <ul class="nav">
+
+              <li>
+                <a href="index.html">
+                  Home
+                </a>
+              </li>
+
+              <li>
+                <a href="about.html">
+                  About
+                </a>
+              </li>
+
+              <li>
+                <a href="deals.html">
+                  Deals
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="reservation.html"
+                  class="active">
+
+                  Reservation
+
+                </a>
+              </li>
+
+              <li>
+                <a href="reservation.html">
+                  Book Yours
+                </a>
+              </li>
+
+            </ul>
+
+
+            <a class="menu-trigger">
+
+              <span>
+                Menu
+              </span>
+
+            </a>
+
+          </nav>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- PAGE HEADING -->
+
+  <div class="second-page-heading">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-12">
+
+
+          <h4>
+            SMART TRIP RESERVATION
+          </h4>
+
+
+          <h2>
+            Plan Your Perfect Tamil Nadu Journey
+          </h2>
+
+
+          <p>
+            Choose your destination, travel preferences and budget.
+            TourGo will help you create your perfect travel plan.
+          </p>
+
+
+          <div class="main-button">
+
+            <a href="#reservation-form">
+
+              Plan Your Trip
+
+            </a>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- CONTACT INFO -->
+
+  <div class="more-info reservation-info">
+
+    <div class="container">
+
+      <div class="row">
+
+
+        <!-- PHONE -->
+
+        <div class="col-lg-4 col-sm-6">
+
+          <div class="info-item">
+
+            <i class="fa fa-phone"></i>
+
+            <h4>
+              Make a Phone Call
+            </h4>
+
+            <a href="#">
+              +91 12345 67890
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- EMAIL -->
+
+        <div class="col-lg-4 col-sm-6">
+
+          <div class="info-item">
+
+            <i class="fa fa-envelope"></i>
+
+            <h4>
+              Contact Us via Email
+            </h4>
+
+            <a href="#">
+              tourgo@email.com
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- LOCATION -->
+
+        <div class="col-lg-4 col-sm-6">
+
+          <div class="info-item">
+
+            <i class="fa fa-map-marker"></i>
+
+            <h4>
+              Explore Tamil Nadu
+            </h4>
+
+            <a href="#">
+              Your Travel Partner
+            </a>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- RESERVATION SECTION -->
+
+  <div class="reservation-form">
+
+    <div class="container">
+
+      <div class="row">
+
+
+        <!-- FORM -->
+
+        <div class="col-lg-7">
+
+
+          <form
+            id="reservation-form"
+            onsubmit="submitReservation(event)">
+
+
+            <div class="row">
+
+
+              <div class="col-lg-12">
+
+                <h4>
+
+                  Create Your
+                  <em>Smart Trip</em>
+
+                </h4>
+
+              </div>
+
+
+              <!-- NAME -->
+
+              <div class="col-lg-6">
+
+                <fieldset>
+
+                  <label class="form-label">
+
+                    Your Name
+
+                  </label>
+
+                  <input
+                    type="text"
+                    id="travelerName"
+                    placeholder="Enter your name"
+                    required>
+
+                </fieldset>
+
+              </div>
+
+
+              <!-- PHONE -->
+
+              <div class="col-lg-6">
+
+                <fieldset>
+
+                  <label class="form-label">
+
+                    Phone Number
+
+                  </label>
+
+                  <input
+                    type="tel"
+                    id="travelerPhone"
+                    placeholder="+91 XXXXX XXXXX"
+                    required>
+
+                </fieldset>
+
+              </div>
+
+
+              <!-- GUESTS -->
+
+              <div class="col-lg-6">
+
+                <fieldset>
+
+                  <label class="form-label">
+
+                    Number Of Travelers
+
+                  </label>
+
+                  <select
+                    id="chooseGuests"
+                    onchange="updateTripSummary()">
+
+                    <option value="1">
+                      1 Traveler
+                    </option>
+
+                    <option value="2">
+                      2 Travelers
+                    </option>
+
+                    <option value="3">
+                      3 Travelers
+                    </option>
+
+                    <option value="4">
+                      4 Travelers
+                    </option>
+
+                    <option value="5+">
+                      5+ Travelers
+                    </option>
+
+                  </select>
+
+                </fieldset>
+
+              </div>
+
+
+              <!-- DATE -->
+
+              <div class="col-lg-6">
+
+                <fieldset>
+
+                  <label class="form-label">
+
+                    Travel Date
+
+                  </label>
+
+                  <input
+                    type="date"
+                    id="travelDate"
+                    onchange="updateTripSummary()"
+                    required>
+
+                </fieldset>
+
+              </div>
+
+
+              <!-- DESTINATION -->
+
+              <div class="col-lg-6">
+
+                <fieldset>
+
+                  <label class="form-label">
+
+                    Choose Destination
+
+                  </label>
+
+                  <select
+                    id="chooseDestination"
+                    onchange="updateTripSummary()">
+
+                    <option value="Theni">
+                      Theni
+                    </option>
+
+                    <option value="Madurai">
+                      Madurai
+                    </option>
+
+                    <option value="Kodaikanal">
+                      Kodaikanal
+                    </option>
+
+                    <option value="Coimbatore">
+                      Coimbatore
+                    </option>
+
+                  </select>
+
+                </fieldset>
+
+              </div>
+
+
+              <!-- DAYS -->
+
+              <div class="col-lg-6">
+
+                <fieldset>
+
+                  <label class="form-label">
+
+                    Number Of Days
+
+                  </label>
+
+                  <select
+                    id="tripDays"
+                    onchange="updateTripSummary()">
+
+                    <option value="1">
+                      1 Day
+                    </option>
+
+                    <option value="2">
+                      2 Days
+                    </option>
+
+                    <option value="3">
+                      3 Days
+                    </option>
+
+                    <option value="4">
+                      4 Days
+                    </option>
+
+                    <option value="5">
+                      5 Days
+                    </option>
+
+                  </select>
+
+                </fieldset>
+
+              </div>
+
+
+              <!-- BUDGET -->
+
+              <div class="col-lg-6">
+
+                <fieldset>
+
+                  <label class="form-label">
+
+                    Budget Range
+
+                  </label>
+
+                  <select
+                    id="tripBudget"
+                    onchange="updateTripSummary()">
+
+                    <option value="Budget Friendly">
+                      Budget Friendly
+                    </option>
+
+                    <option value="Medium Budget">
+                      Medium Budget
+                    </option>
+
+                    <option value="Premium Trip">
+                      Premium Trip
+                    </option>
+
+                  </select>
+
+                </fieldset>
+
+              </div>
+
+
+              <!-- ACCOMMODATION -->
+
+              <div class="col-lg-6">
+
+                <fieldset>
+
+                  <label class="form-label">
+
+                    Accommodation
+
+                  </label>
+
+                  <select
+                    id="accommodation"
+                    onchange="updateTripSummary()">
+
+                    <option value="No Accommodation">
+                      No Accommodation
+                    </option>
+
+                    <option value="Budget Hotel">
+                      Budget Hotel
+                    </option>
+
+                    <option value="Standard Hotel">
+                      Standard Hotel
+                    </option>
+
+                    <option value="Premium Hotel">
+                      Premium Hotel
+                    </option>
+
+                  </select>
+
+                </fieldset>
+
+              </div>
+
+
+              <!-- TRANSPORT -->
+
+              <div class="col-lg-6">
+
+                <fieldset>
+
+                  <label class="form-label">
+
+                    Need Transport?
+
+                  </label>
+
+                  <select
+                    id="transport"
+                    onchange="updateTripSummary()">
+
+                    <option value="Yes">
+                      Yes, I Need Transport
+                    </option>
+
+                    <option value="No">
+                      No, I Have My Own Transport
+                    </option>
+
+                  </select>
+
+                </fieldset>
+
+              </div>
+
+
+              <!-- FOOD -->
+
+              <div class="col-lg-6">
+
+                <fieldset>
+
+                  <label class="form-label">
+
+                    Food Preference
+
+                  </label>
+
+                  <select
+                    id="foodPreference"
+                    onchange="updateTripSummary()">
+
+                    <option value="Vegetarian">
+                      Vegetarian
+                    </option>
+
+                    <option value="Non-Vegetarian">
+                      Non-Vegetarian
+                    </option>
+
+                    <option value="Both">
+                      Both
+                    </option>
+
+                  </select>
+
+                </fieldset>
+
+              </div>
+
+
+              <!-- BUTTON -->
+
+              <div class="col-lg-12">
+
+                <fieldset>
+
+                  <button
+                    type="submit"
+                    class="main-button">
+
+                    Make Your Reservation Now
+
+                  </button>
+
+                </fieldset>
+
+              </div>
+
+
+            </div>
+
+          </form>
+
+        </div>
+
+
+        <!-- SMART SUMMARY -->
+
+        <div class="col-lg-5">
+
+          <div class="smart-trip-summary">
+
+
+            <div class="summary-header">
+
+              <h3>
+                ✨ Your Smart Trip Plan
+              </h3>
+
+              <p>
+                Your travel preferences will appear here.
+              </p>
+
+            </div>
+
+
+            <div class="summary-destination">
+
+              <i class="fa fa-map-marker"></i>
+
+              <span id="summaryDestination">
+                Theni
+              </span>
+
+            </div>
+
+
+            <div class="summary-item">
+
+              <span>
+                👤 Travelers
+              </span>
+
+              <strong
+                id="summaryGuests">
+
+                1 Traveler
+
+              </strong>
+
+            </div>
+
+
+            <div class="summary-item">
+
+              <span>
+                📅 Travel Date
+              </span>
+
+              <strong
+                id="summaryDate">
+
+                Not Selected
+
+              </strong>
+
+            </div>
+
+
+            <div class="summary-item">
+
+              <span>
+                🗓️ Duration
+              </span>
+
+              <strong
+                id="summaryDays">
+
+                1 Day
+
+              </strong>
+
+            </div>
+
+
+            <div class="summary-item">
+
+              <span>
+                💰 Budget
+              </span>
+
+              <strong
+                id="summaryBudget">
+
+                Budget Friendly
+
+              </strong>
+
+            </div>
+
+
+            <div class="summary-item">
+
+              <span>
+                🏨 Stay
+              </span>
+
+              <strong
+                id="summaryAccommodation">
+
+                No Accommodation
+
+              </strong>
+
+            </div>
+
+
+            <div class="summary-item">
+
+              <span>
+                🚗 Transport
+              </span>
+
+              <strong
+                id="summaryTransport">
+
+                Yes
+
+              </strong>
+
+            </div>
+
+
+            <div class="summary-item">
+
+              <span>
+                🍽️ Food
+              </span>
+
+              <strong
+                id="summaryFood">
+
+                Vegetarian
+
+              </strong>
+
+            </div>
+
+
+            <div class="smart-trip-message"
+              id="smartTripMessage">
+
+              🌿 Great choice! Get ready to explore Theni with TourGo.
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- CALL TO ACTION -->
+
+  <div class="call-to-action">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-8">
+
+          <h2>
+            Ready For Your Next Adventure?
+          </h2>
+
+          <h4>
+            Book your Tamil Nadu journey with TourGo today.
+          </h4>
+
+        </div>
+
+
+        <div class="col-lg-4">
+
+          <div class="border-button">
+
+            <a href="#reservation-form">
+
+              Book Yours Now
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-12">
+
+          <p>
+
+            Copyright © 2026
+
+            <a href="#">
+              TourGo Travel
+            </a>
+
+            Company. All rights reserved.
+
+            <br>
+
+            Design:
+
+            <a href="#">
+              YUVASRI
+            </a>
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- SCRIPTS -->
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+
+  <script src="assets/js/owl-carousel.js"></script>
+
+  <script src="assets/js/wow.js"></script>
+
+  <script src="assets/js/tabs.js"></script>
+
+  <script src="assets/js/popup.js"></script>
+
+  <script src="assets/js/custom.js"></script>
+
+
+  <!-- SMART RESERVATION JAVASCRIPT -->
+
+  <script>
+
+    function updateTripSummary() {
+
+      const destination =
+        document.getElementById("chooseDestination").value;
+
+      const guests =
+        document.getElementById("chooseGuests").value;
+
+      const date =
+        document.getElementById("travelDate").value;
+
+      const days =
+        document.getElementById("tripDays").value;
+
+      const budget =
+        document.getElementById("tripBudget").value;
+
+      const accommodation =
+        document.getElementById("accommodation").value;
+
+      const transport =
+        document.getElementById("transport").value;
+
+      const food =
+        document.getElementById("foodPreference").value;
+
+
+      document.getElementById("summaryDestination").innerHTML =
+        destination;
+
+
+      document.getElementById("summaryGuests").innerHTML =
+        guests + " Traveler" +
+        (guests === "1" ? "" : "s");
+
+
+      document.getElementById("summaryDate").innerHTML =
+        date ? date : "Not Selected";
+
+
+      document.getElementById("summaryDays").innerHTML =
+        days + " Day" +
+        (days === "1" ? "" : "s");
+
+
+      document.getElementById("summaryBudget").innerHTML =
+        budget;
+
+
+      document.getElementById("summaryAccommodation").innerHTML =
+        accommodation;
+
+
+      document.getElementById("summaryTransport").innerHTML =
+        transport;
+
+
+      document.getElementById("summaryFood").innerHTML =
+        food;
+
+
+      document.getElementById("smartTripMessage").innerHTML =
+        "✨ Great choice! Get ready to explore " +
+        destination +
+        " with TourGo.";
+
+    }
+
+
+    /* FORM SUBMIT */
+
+    function submitReservation(event) {
+
+      event.preventDefault();
+
+
+      const name =
+        document.getElementById("travelerName").value;
+
+
+      const destination =
+        document.getElementById("chooseDestination").value;
+
+
+      alert(
+        "Thank you " +
+        name +
+        "! Your " +
+        destination +
+        " trip reservation has been created successfully. 🎉"
+      );
+
+    }
+
+
+    /* INITIAL SUMMARY */
+
+    updateTripSummary();
+
+  </script>
+
+
+</body>
+
+</html>

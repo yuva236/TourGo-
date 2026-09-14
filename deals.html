@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <title>TourGo Travel - Smart Travel Deals</title>
+
+  <!-- Bootstrap CSS -->
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS -->
+
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-woox-travel.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+  <!-- SMART DEALS STYLE -->
+
+  <style>
+
+    .smart-deal-box {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      margin-bottom: 50px;
+    }
+
+
+    .smart-deal-title {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+
+    .smart-deal-title h3 {
+      font-size: 25px;
+      margin-bottom: 8px;
+    }
+
+
+    .smart-deal-title p {
+      font-size: 14px;
+      color: #777;
+    }
+
+
+    .filter-label {
+      font-weight: 600;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+
+    .deal-card {
+      transition: 0.3s;
+    }
+
+
+    .deal-card:hover {
+      transform: translateY(-5px);
+    }
+
+
+    .no-results {
+      display: none;
+      text-align: center;
+      padding: 40px;
+      font-size: 18px;
+    }
+
+
+    .smart-search-btn {
+      width: 100%;
+      border: none;
+      background: #22b3c1;
+      color: white;
+      padding: 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+
+    .smart-search-btn:hover {
+      transform: translateY(-2px);
+    }
+
+
+    .deal-city {
+      display: inline-block;
+      background: #eefafa;
+      color: #22b3c1;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+
+    @media (max-width: 768px) {
+
+      .smart-deal-box {
+        padding: 20px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- PRELOADER -->
+
+  <div id="js-preloader" class="js-preloader">
+
+    <div class="preloader-inner">
+
+      <span class="dot"></span>
+
+      <div class="dots">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- HEADER -->
+
+  <header class="header-area header-sticky">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-12">
+
+          <nav class="main-nav">
+
+            <a href="index.html" class="logo">
+
+              <img
+                src="assets/images/Gemini_Generated_Image_qho5wzqho5wzqho5 (1).png"
+                alt="TourGo">
+
+            </a>
+
+
+            <ul class="nav">
+
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+
+              <li>
+                <a href="about.html">About</a>
+              </li>
+
+              <li>
+                <a href="deals.html" class="active">Deals</a>
+              </li>
+
+              <li>
+                <a href="reservation.html">Reservation</a>
+              </li>
+
+              <li>
+                <a href="reservation.html">Book Yours</a>
+              </li>
+
+            </ul>
+
+
+            <a class="menu-trigger">
+
+              <span>Menu</span>
+
+            </a>
+
+          </nav>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- PAGE HEADING -->
+
+  <div class="page-heading">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-12">
+
+          <h4>SMART TRAVEL DEALS</h4>
+
+          <h2>Find Your Perfect Tamil Nadu Trip</h2>
+
+          <div class="border-button">
+
+            <a href="#smart-deals">
+              Explore Deals
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- SMART FILTER -->
+
+  <div class="search-form" id="smart-deals">
+
+    <div class="container">
+
+      <div class="smart-deal-box">
+
+
+        <div class="smart-deal-title">
+
+          <h3>✨ Find Your Perfect Trip</h3>
+
+          <p>
+            Select your favourite destination and budget to discover the best TourGo travel deals.
+          </p>
+
+        </div>
+
+
+        <div class="row">
+
+
+          <!-- DESTINATION -->
+
+          <div class="col-lg-5 col-md-5">
+
+            <label class="filter-label">
+
+              📍 Choose Destination
+
+            </label>
+
+            <select
+              id="chooseLocation"
+              class="form-select">
+
+              <option value="all">
+                All Destinations
+              </option>
+
+              <option value="theni">
+                Theni
+              </option>
+
+              <option value="madurai">
+                Madurai
+              </option>
+
+              <option value="kodaikanal">
+                Kodaikanal
+              </option>
+
+              <option value="coimbatore">
+                Coimbatore
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <!-- BUDGET -->
+
+          <div class="col-lg-5 col-md-5">
+
+            <label class="filter-label">
+
+              💰 Choose Budget
+
+            </label>
+
+            <select
+              id="choosePrice"
+              class="form-select">
+
+              <option value="all">
+                All Budget
+              </option>
+
+              <option value="low">
+                ₹1,000 – ₹2,000
+              </option>
+
+              <option value="medium">
+                ₹2,001 – ₹4,000
+              </option>
+
+              <option value="high">
+                ₹4,000+
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <!-- SEARCH -->
+
+          <div class="col-lg-2 col-md-2">
+
+            <label class="filter-label">
+
+              &nbsp;
+
+            </label>
+
+            <button
+              type="button"
+              class="smart-search-btn"
+              onclick="filterDeals()">
+
+              🔍 Search
+
+            </button>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- DEALS -->
+
+  <div class="amazing-deals">
+
+    <div class="container">
+
+      <div class="row">
+
+
+        <!-- HEADING -->
+
+        <div class="col-lg-6 offset-lg-3">
+
+          <div class="section-heading text-center">
+
+            <h2>
+              Best Travel Deals
+            </h2>
+
+            <p>
+              Explore the best destinations across Tamil Nadu and choose a trip that matches your travel preferences and budget.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- THENI -->
+
+        <div
+          class="col-lg-6 col-sm-6 deal-card"
+          data-city="theni"
+          data-budget="medium">
+
+          <div class="item">
+
+            <div class="row">
+
+
+              <div class="col-lg-6">
+
+                <div class="image">
+
+                  <img
+                    src="assets/images/deals-01.jpg"
+                    alt="Theni">
+
+                </div>
+
+              </div>
+
+
+              <div class="col-lg-6 align-self-center">
+
+                <div class="content">
+
+                  <span class="info">
+                    *Limited Offer Today
+                  </span>
+
+                  <h4>
+                    Theni
+                  </h4>
+
+                  <span class="deal-city">
+                    📍 Nature Escape
+                  </span>
+
+
+                  <div class="row">
+
+                    <div class="col-6">
+
+                      <i class="fa fa-clock"></i>
+
+                      <span class="list">
+                        5 Days
+                      </span>
+
+                    </div>
+
+
+                    <div class="col-6">
+
+                      <i class="fa fa-map"></i>
+
+                      <span class="list">
+                        Daily Places
+                      </span>
+
+                    </div>
+
+                  </div>
+
+
+                  <p>
+                    Your gateway to the scenic waterfalls, hills, tea estates and natural wonders of Theni.
+                  </p>
+
+
+                  <div class="main-button">
+
+                    <a href="reservation.html">
+
+                      Make a Reservation
+
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- MADURAI -->
+
+        <div
+          class="col-lg-6 col-sm-6 deal-card"
+          data-city="madurai"
+          data-budget="low">
+
+          <div class="item">
+
+            <div class="row">
+
+
+              <div class="col-lg-6">
+
+                <div class="image">
+
+                  <img
+                    src="assets/images/deals-02.jpg"
+                    alt="Madurai">
+
+                </div>
+
+              </div>
+
+
+              <div class="col-lg-6 align-self-center">
+
+                <div class="content">
+
+                  <span class="info">
+                    *Today & Tomorrow Only
+                  </span>
+
+                  <h4>
+                    Madurai
+                  </h4>
+
+                  <span class="deal-city">
+                    🛕 Heritage Experience
+                  </span>
+
+
+                  <div class="row">
+
+                    <div class="col-6">
+
+                      <i class="fa fa-clock"></i>
+
+                      <span class="list">
+                        3 Days
+                      </span>
+
+                    </div>
+
+
+                    <div class="col-6">
+
+                      <i class="fa fa-map"></i>
+
+                      <span class="list">
+                        Daily Places
+                      </span>
+
+                    </div>
+
+                  </div>
+
+
+                  <p>
+                    Explore magnificent temples, historic landmarks, culture and timeless heritage in Madurai.
+                  </p>
+
+
+                  <div class="main-button">
+
+                    <a href="reservation.html">
+
+                      Make a Reservation
+
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- KODAIKANAL -->
+
+        <div
+          class="col-lg-6 col-sm-6 deal-card"
+          data-city="kodaikanal"
+          data-budget="high">
+
+          <div class="item">
+
+            <div class="row">
+
+
+              <div class="col-lg-6">
+
+                <div class="image">
+
+                  <img
+                    src="assets/images/deals-03.jpg"
+                    alt="Kodaikanal">
+
+                </div>
+
+              </div>
+
+
+              <div class="col-lg-6 align-self-center">
+
+                <div class="content">
+
+                  <span class="info">
+                    *Hill Station Special
+                  </span>
+
+                  <h4>
+                    Kodaikanal
+                  </h4>
+
+                  <span class="deal-city">
+                    🌲 Hill Escape
+                  </span>
+
+
+                  <div class="row">
+
+                    <div class="col-6">
+
+                      <i class="fa fa-clock"></i>
+
+                      <span class="list">
+                        5 Days
+                      </span>
+
+                    </div>
+
+
+                    <div class="col-6">
+
+                      <i class="fa fa-map"></i>
+
+                      <span class="list">
+                        Scenic Places
+                      </span>
+
+                    </div>
+
+                  </div>
+
+
+                  <p>
+                    Experience misty mountains, peaceful lakes, pine forests and refreshing weather in Kodaikanal.
+                  </p>
+
+
+                  <div class="main-button">
+
+                    <a href="reservation.html">
+
+                      Make a Reservation
+
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- COIMBATORE -->
+
+        <div
+          class="col-lg-6 col-sm-6 deal-card"
+          data-city="coimbatore"
+          data-budget="medium">
+
+          <div class="item">
+
+            <div class="row">
+
+
+              <div class="col-lg-6">
+
+                <div class="image">
+
+                  <img
+                    src="assets/images/deals-04.jpg"
+                    alt="Coimbatore">
+
+                </div>
+
+              </div>
+
+
+              <div class="col-lg-6 align-self-center">
+
+                <div class="content">
+
+                  <span class="info">
+                    *Nature & City Special
+                  </span>
+
+                  <h4>
+                    Coimbatore
+                  </h4>
+
+                  <span class="deal-city">
+                    🌿 Western Ghats
+                  </span>
+
+
+                  <div class="row">
+
+                    <div class="col-6">
+
+                      <i class="fa fa-clock"></i>
+
+                      <span class="list">
+                        4 Days
+                      </span>
+
+                    </div>
+
+
+                    <div class="col-6">
+
+                      <i class="fa fa-map"></i>
+
+                      <span class="list">
+                        Daily Places
+                      </span>
+
+                    </div>
+
+                  </div>
+
+
+                  <p>
+                    Discover temples, waterfalls, scenic mountains and the beautiful surroundings of Coimbatore.
+                  </p>
+
+
+                  <div class="main-button">
+
+                    <a href="reservation.html">
+
+                      Make a Reservation
+
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- NO RESULTS -->
+
+        <div
+          class="col-lg-12 no-results"
+          id="no-results">
+
+          😔 No travel deals found for this selection.
+
+          <br>
+
+          Try choosing another destination or budget.
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- CALL TO ACTION -->
+
+  <div class="call-to-action">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-8">
+
+          <h2>
+            Are You Looking To Travel?
+          </h2>
+
+          <h4>
+            Make A Reservation By Clicking The Button
+          </h4>
+
+        </div>
+
+
+        <div class="col-lg-4">
+
+          <div class="border-button">
+
+            <a href="reservation.html">
+
+              Book Yours Now
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-12">
+
+          <p>
+
+            Copyright © 2026
+
+            <a href="#">
+              TourGo Travel
+            </a>
+
+            Company. All rights reserved.
+
+            <br>
+
+            Design:
+
+            <a href="#">
+              YUVASRI
+            </a>
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- SCRIPTS -->
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+
+  <script src="assets/js/owl-carousel.js"></script>
+
+  <script src="assets/js/wow.js"></script>
+
+
+  <script src="assets/js/tabs.js"></script>
+
+  <script src="assets/js/popup.js"></script>
+
+  <script src="assets/js/custom.js"></script>
+
+
+  <!-- SMART DEAL FILTER SCRIPT -->
+
+  <script>
+
+    function filterDeals() {
+
+      const selectedCity =
+        document.getElementById("chooseLocation").value;
+
+
+      const selectedBudget =
+        document.getElementById("choosePrice").value;
+
+
+      const deals =
+        document.querySelectorAll(".deal-card");
+
+
+      let visibleDeals = 0;
+
+
+      deals.forEach(function(deal) {
+
+        const dealCity =
+          deal.getAttribute("data-city");
+
+
+        const dealBudget =
+          deal.getAttribute("data-budget");
+
+
+        const cityMatch =
+          selectedCity === "all" ||
+          selectedCity === dealCity;
+
+
+        const budgetMatch =
+          selectedBudget === "all" ||
+          selectedBudget === dealBudget;
+
+
+        if (cityMatch && budgetMatch) {
+
+          deal.style.display = "block";
+
+          visibleDeals++;
+
+        }
+
+        else {
+
+          deal.style.display = "none";
+
+        }
+
+      });
+
+
+      const noResults =
+        document.getElementById("no-results");
+
+
+      if (visibleDeals === 0) {
+
+        noResults.style.display =
+          "block";
+
+      }
+
+      else {
+
+        noResults.style.display =
+          "none";
+
+      }
+
+    }
+
+  </script>
+
+
+</body>
+
+</html>
